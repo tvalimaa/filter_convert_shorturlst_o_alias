@@ -37,7 +37,7 @@ class Filtershorturlstoalias extends FilterBase {
         } else {
           $dpath = '';
         }
-        $newpath[$url] = $base_root . \Drupal::service('path.alias_manager')->getAliasByPath($dpath, $langcode);
+        $newpath[$url] = $base_root . \Drupal::service('path_alias.manager')->getAliasByPath($dpath, $langcode);
       } else {
         unset($urls[$url]);
       }
